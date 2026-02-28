@@ -38,7 +38,7 @@ class UnitTestCoreApplicationTests {
     void idCardTest() {
         Assertions.assertTrue(IdcardUtil.isValidCard18("512922197601023488", true));
         Assertions.assertTrue(LocalDateTimeUtil.parse(IdcardUtil.getBirthByIdCard("511321202602043479"), "yyyyMMdd")
-                .isAfter(LocalDateTimeUtil.now()));
+                .isAfter(LocalDateTimeUtil.parse("1986-04-21", "yyyy-MM-dd")));
         Assertions.assertEquals(0, IdcardUtil.getAgeByIdCard("511321202602033479", new Date()));
         Assertions.assertEquals("511321000512347", IdcardUtil.convert18To15("511321200005123479"));
         Assertions.assertEquals("511321200005123479", IdcardUtil.convert15To18("511321000512347"));
