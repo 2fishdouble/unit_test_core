@@ -10,7 +10,7 @@
     </parent>
     <groupId>bch</groupId>
     <artifactId>unit_test_core</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>unit_test_core</name>
     <description>unit_test_core</description>
 
