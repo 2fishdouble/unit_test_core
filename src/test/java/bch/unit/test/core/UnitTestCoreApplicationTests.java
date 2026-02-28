@@ -29,7 +29,6 @@ import java.util.List;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.ReentrantLock;
 
-@Import(TestcontainersConfiguration.class)
 @SpringBootTest
 @Slf4j
 class UnitTestCoreApplicationTests {
