@@ -1,3 +1,19 @@
 spring:
+  mail:
+    host: smtp.qq.com
+    username: 2737224577@qq.com
+    password: rjiaekbmgarwdgda
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  profiles:
+    active: dev
   application:
     name: unit_test
+mail:
+  receivers:
+    - dengzhaojun@fengchunmeds.com
