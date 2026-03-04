@@ -54,14 +54,15 @@ class MailTest {
 
             // 发送邮件
             receivers.forEach(receiver -> {
-                SimpleMailMessage mailMessage = new SimpleMailMessage();
-                mailMessage.setFrom("2737224577@qq.com");
-                mailMessage.setSubject(applicationName + "-" + profile + "系统异常警告");
-                mailMessage.setText(stackTrace);
-                mailMessage.setTo(receiver);
-                mailSender.send(mailMessage);
+//                SimpleMailMessage mailMessage = new SimpleMailMessage();
+//                mailMessage.setFrom("2737224577@qq.com");
+//                mailMessage.setSubject(applicationName + "-" + profile + "系统异常警告");
+//                mailMessage.setText(stackTrace);
+//                mailMessage.setTo(receiver);
+//                mailSender.send(mailMessage);
 //                executor.submit(() -> mailSender.send(mailMessage));
             });
+            log.info("send mail success");
         }
     }
 }
